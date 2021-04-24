@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WadaFaka Madafaka</title>
+    <link rel="stylesheet" href="/lib/bootstrap-3.3.7.min.css" crossorigin="anonymous">
+    <script src="/lib/jquery-3.2.1.min.js"></script>
+    <script src="yawa.js"></script>
+    <style>
+      h1{
+          color: #d52e3f;
+          text-decoration: none;
+          font-family: 'Niconne', cursive;
+          font-size: 1.0rem;
+      }
+      .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #d8d8d8;
+      }
+
+      .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #d8d8d8;
+      }
+
+      .form-control::-ms-input-placeholder { /* Microsoft Edge */
+            color: #d8d8d8;
+      }
+      .form-control:focus {
+        border-color: #9a0026;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+
+
+   
+
+      
+        <div class="container p-5">
+          <h1 class="text-center">Y A W A M A N D I A Y K O</h1>
+          <form autocomplete="off">
+            <div class="form-group">
+              <label for="Links" class="text-white">Your Steam Profile Link</label>
+              <input id="Links" type="text" class="form-control  bg-secondary text-white" style="border-color: #d8d8d8;" aria-describedby="steamName" placeholder="https://steamcommunity.com/id/yawa/edit/info">
+              <small id="steamName" class="form-text text-white-50">link to your edit profile ex: https://steamcommunity.com/id/yawa/edit/info</small>
+            </div>
+            <button id="inject" class="btn btn-danger btn-block">Execute</button>
+          </form>
+
+
+          <center>
+            <small class="text-muted">&copy;CedMat</small>
+          </center>
+          
+        </div>
+    
+
+  </body>
+</html>
