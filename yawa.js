@@ -7,8 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var url = tab[0].url;
     injectButton.addEventListener('click', function() {
         let Inject =`
-          document.getElementsByClassName("btn_profile_action btn_medium")[0].getElementsByTagName("span")[0].innerText = "Edit Profile";
-          document.getElementsByClassName("profile_header_actions")[0].getElementsByTagName("a")[0].href = "`+`${SteamLink.value}`+`";
+          let y = document.getElementsByClassName("btn_profile_action btn_medium")[0]
+          
+          y.getElementsByTagName("span")[0].innerHTML = "Edit Profile"
+          y.href= "`+`${SteamLink.value}`+`"
+
+          let x = { 10 : document.getElementsByClassName("submenu_username")[1].getElementsByTagName("a")[1], 11 :document.getElementsByClassName("user_avatar playerAvatar offline")[0]}
+          for(i in x  ) { x[i].href = "`+`${url}`+`" }
+
+          
+
           var elements = document.getElementsByClassName('btn_profile_action btn_medium'),
               element;
             while (element = elements[1]) {
@@ -29,4 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   
+
+  
+  
+
+
 });
